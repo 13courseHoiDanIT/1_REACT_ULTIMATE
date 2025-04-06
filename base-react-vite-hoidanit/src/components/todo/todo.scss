@@ -1,0 +1,89 @@
+.todo-container {
+
+    margin: 50px auto;
+    width: 600px;
+
+    .todo-title {
+        font-size: 50px;
+        font-weight: bold;
+        background: linear-gradient(to right, #E44641, #DAA357);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .todo-new {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+        input {
+            padding: 15px 40px;
+            margin-right: 8px;
+            background-color: #EDF2F7;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        button {
+            padding: 15px 30px;
+            background-color: #3D9DEE;
+            border-radius: 5px;
+            border: none;
+            color: #EDF2F7;
+            font-weight: bold;
+        }
+    }
+
+    .todo-data {
+        margin-top: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .todo-image {
+        display: flex;
+        justify-content: center;
+
+        .logo {
+            height: 6em;
+            padding: 1.5em;
+            will-change: filter;
+            transition: filter 300ms;
+        }
+
+        .logo:hover {
+            filter: drop-shadow(0 0 2em #646cffaa);
+        }
+
+        .logo.react:hover {
+            filter: drop-shadow(0 0 2em #61dafbaa);
+        }
+
+        @keyframes logo-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .logo {
+                animation: logo-spin infinite 20s linear;
+            }
+        }
+    }
+
+}
