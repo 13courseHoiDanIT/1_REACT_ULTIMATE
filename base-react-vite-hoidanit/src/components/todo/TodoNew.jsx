@@ -1,11 +1,23 @@
 const TodoNew = (props) => {
-    console.log("check props", props)
+    // console.log("check props", props)
     const { addNewTodo } = props;
-    addNewTodo()
+
+    // addNewTodo() //fire
+    const handleClick = () => {
+        alert("click me")
+    }
+
+    const handleOnChange = (name) => {
+        console.log("handle on change", name)
+    }
     return (
         <div className="todo-new">
-            <input type="text" placeholder="Enter your task" />
-            <button>Add</button>
+            <input type="text"
+                onChange={(event) => handleOnChange(event.target.value)}
+                placeholder="Enter your task" />
+            <button style={{ cursor: "pointer" }}
+                onClick={handleClick}
+            >Add</button>
         </div>
     )
 }

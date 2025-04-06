@@ -1,6 +1,6 @@
 const TodoData = (props) => {
     const { name } = props;
-    console.log("props", props)
+    // console.log("props", props)
     return (
         <div className='todo-data'>
             <div>My name is {props.name}</div>
