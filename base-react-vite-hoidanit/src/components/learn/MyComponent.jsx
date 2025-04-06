@@ -1,10 +1,13 @@
+//JSX
+//Fragment
 
-
-//() => { }
-// component = html + css + js
+import './style.css'
 const MyComponent = () => {
     return (
-        <div> Eric & hoidanIT</div>
+        <>
+            <div > Eric & hoidanIT</div>
+            <div className="child">child</div>
+        </>
     );
 }
 
