@@ -1,0 +1,56 @@
+#error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #f8f9fa, #e0e0e0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        color: #ff4d4f;
+        animation: bounce 1s ease infinite alternate;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+
+    i {
+        color: #888;
+        font-style: italic;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 0.75rem 1.5rem;
+        background-color: #1890ff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #40a9ff;
+        }
+    }
+}
+
+// Optional bounce animation for the heading
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
